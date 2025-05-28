@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ridge-Heath HOA - HOA Docs & Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for cards or interactive elements on hover */
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .transition-all-smooth {
+            transition: all 0.3s ease-in-out;
+        }
+        /* Icon styling for document links */
+        .document-link svg {
+            margin-right: 0.75rem; /* 12px */
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-20">
+                <div class="text-2xl font-bold text-blue-600">
+                    <a href="index.html">The Ridge-Heath HOA</a>
+                </div>
+                <div class="hidden md:flex space-x-1">
+                    <a href="index.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">Home</a>
+                    <a href="officers.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">Officers</a>
+                    <a href="hoa-docs-and-information.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth bg-blue-100 text-blue-600">HOA Docs</a>
+                    <a href="local-info-links.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">Local Info</a>
+                    <a href="terms.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">Terms</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">Home</a>
+            <a href="officers.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">Officers</a>
+            <a href="hoa-docs-and-information.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth bg-blue-100 text-blue-600">HOA Docs</a>
+            <a href="local-info-links.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">Local Info</a>
+            <a href="terms.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">Terms</a>
+        </div>
+    </header>
+
+    <section class="bg-blue-600 text-white py-16 md:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold">HOA Documents & Information</h1>
+            <p class="text-lg sm:text-xl mt-2">Access essential documents and details about your HOA</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section id="hoa-documents-list">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Official HOA Documents</h2>
+            <div class="max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                <p class="text-gray-700 leading-relaxed mb-8">
+                    The following official HOA documents and forms are available for review. Click on a document name to open it in a new tab.
+                </p>
+                <ul class="space-y-4">
+                    <li>
+                        <a href="/assets/documents/arc-project-application.pdf" target="_blank" class="document-link flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:shadow-md transition-all-smooth hover-lift">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span class="text-blue-700 font-medium hover:text-blue-800">ARC Project Application</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/assets/documents/by-law-amendments.pdf" target="_blank" class="document-link flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:shadow-md transition-all-smooth hover-lift">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span class="text-blue-700 font-medium hover:text-blue-800">By-Law Amendments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/assets/documents/by-laws-section-I.pdf" target="_blank" class="document-link flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:shadow-md transition-all-smooth hover-lift">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span class="text-blue-700 font-medium hover:text-blue-800">Bylaws Section I</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/assets/documents/by-laws-section-II.pdf" target="_blank" class="document-link flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:shadow-md transition-all-smooth hover-lift">
+                           <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span class="text-blue-700 font-medium hover:text-blue-800">Bylaws Section II</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/assets/documents/by-laws-section-III-V.pdf" target="_blank" class="document-link flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:shadow-md transition-all-smooth hover-lift">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span class="text-blue-700 font-medium hover:text-blue-800">Bylaws Sections III–V</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/assets/documents/by-laws.pdf" target="_blank" class="document-link flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:shadow-md transition-all-smooth hover-lift">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span class="text-blue-700 font-medium hover:text-blue-800">Complete HOA Bylaws</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/assets/documents/restrictions-covenants.pdf" target="_blank" class="document-link flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:shadow-md transition-all-smooth hover-lift">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span class="text-blue-700 font-medium hover:text-blue-800">Protective Covenants & Restrictions</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="mt-8 text-gray-700 leading-relaxed">
+                    If you need additional information or have questions regarding these documents, please contact your HOA representative.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-10 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="currentYear"></span> The Ridge-Heath, TX HOA. All Rights Reserved.</p>
+            <p><a href="terms.html" class="hover:text-white underline">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

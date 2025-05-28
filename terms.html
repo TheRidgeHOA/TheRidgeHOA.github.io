@@ -10,6 +10,9 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        .hero-bg {
+            background-image: url('assets/images/hero.jpg');
+        }
         .transition-all-smooth {
             transition: all 0.3s ease-in-out;
         }
@@ -62,8 +65,9 @@
         </div>
     </header>
 
-    <section class="bg-blue-600 text-white py-16 md:py-20">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="hero-bg bg-cover bg-center text-white py-24 md:py-32 relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h1 class="text-4xl sm:text-5xl font-bold">Terms of Use</h1>
             <p class="text-lg sm:text-xl mt-2">Please read our terms carefully.</p>
         </div>
@@ -125,8 +129,4 @@
         }
 
         // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
-
-</body>
-</html>
+        document.getElementById('currentYear').textContent = new D

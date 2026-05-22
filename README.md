@@ -3,7 +3,7 @@
 > **Last updated:** 2026-05-22 — added Fees & Dues page, HOA Docs restructure,
 > reading-copy PDFs, and `_reconstruction/` staging folder.
 
-This is the source repository for **theridgeheath.com**, the official website of
+This is the source repository for **heathridgehoa.com**, the official website of
 The Ridge-Heath Homeowners Association in Heath, Texas. The site is built with
 [Jekyll](https://jekyllrb.com/) and hosted on
 [GitHub Pages](https://pages.github.com/) using a custom domain. GitHub builds
@@ -36,10 +36,10 @@ no manual build step, no separate hosting account to manage.
 1. Edit a file (see recipes below).
 2. Commit and push to the default branch (`main` or `master`).
 3. GitHub Pages detects the push, runs Jekyll, and the live site at
-   **theridgeheath.com** reflects the change within about a minute.
+   **heathridgehoa.com** reflects the change within about a minute.
 
 The `CNAME` file in the repo root tells GitHub Pages to serve the site at
-`theridgeheath.com`. Do not delete or rename that file.
+`heathridgehoa.com`. Do not delete or rename that file.
 
 There is no `_site/` folder to commit — GitHub Pages builds that on its own
 servers. The `.gitignore` already excludes it.
@@ -391,7 +391,7 @@ The matching section appears automatically on the next build.
 ### contact_email
 
 ```yaml
-contact_email: "board@theridgeheath.com"
+contact_email: "board@heathridgehoa.com"
 ```
 
 Effect: a contact email link appears in the site footer and in the "Contact

@@ -12,9 +12,9 @@ description: >-
   Texas - community information, governing documents, officers, and local
   resources for residents of The Ridge.
 
-# Custom domain is theridgeheath.com (see the CNAME file in the repo root).
+# Custom domain is heathridgehoa.com (see the CNAME file in the repo root).
 # Because the site is served from the domain root, baseurl is empty.
-url: "https://theridgeheath.com"
+url: "https://heathridgehoa.com"
 baseurl: ""
 
 # Default social-share / Open Graph image (lives in assets/images/).

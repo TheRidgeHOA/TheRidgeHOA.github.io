@@ -28,7 +28,7 @@
 # --- Contact email ---------------------------------------------------------
 # A general HOA contact email address. When set, it appears as a contact
 # section in the site footer and on the Terms page "Contact Us" area.
-# Example:  contact_email: "board@theridgeheath.com"
+# Example:  contact_email: "board@heathridgehoa.com"
 contact_email: ""
 
 

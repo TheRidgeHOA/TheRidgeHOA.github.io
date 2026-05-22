@@ -1,126 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ridge-Heath HOA - Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom hero background - assuming assets/images/hero-background.jpg exists */
-        .hero-bg {
-            background-image: url('assets/images/hero.jpg');
-        }
-        /* Simple animation for cards or interactive elements on hover */
-        .hover-lift:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .transition-all-smooth {
-            transition: all 0.3s ease-in-out;
-        }
-    </style>
-</head>
-<body class="bg-gray-100 text-gray-800">
+---
+layout: home
+title: "Home"
+description: >-
+  Welcome to The Ridge-Heath HOA in Heath, Texas - a friendly, family-oriented
+  community of 53 estate-lot homes with a 45-acre Common Recreational Area.
+hero_title: "Welcome to The Ridge-Heath HOA"
+hero_subtitle: "Your Community, Our Commitment"
+hero_cta_text: "Join Our Facebook Group"
+hero_cta_url: "https://www.facebook.com/groups/1041583285904997"
+---
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <nav class="flex items-center justify-between h-20">
-                <div class="text-2xl font-bold text-blue-600">
-                    <a href="index.html">The Ridge-Heath HOA</a>
-                </div>
-                <div class="hidden md:flex space-x-1">
-                    <a href="index.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth bg-blue-100 text-blue-600">Home</a>
-                    <a href="officers.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">Officers</a>
-                    <a href="hoa-docs-and-information.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">HOA Docs</a>
-                    <a href="local-info-links.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">Local Info</a>
-                    <a href="terms.html" class="px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white rounded-md font-medium transition-all-smooth">Terms</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                    </button>
-                </div>
-            </nav>
-        </div>
-        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-            <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth bg-blue-100 text-blue-600">Home</a>
-            <a href="officers.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">Officers</a>
-            <a href="hoa-docs-and-information.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">HOA Docs</a>
-            <a href="local-info-links.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">Local Info</a>
-            <a href="terms.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-500 hover:text-white font-medium transition-all-smooth">Terms</a>
-        </div>
-    </header>
+<section class="home-section">
+  <div class="container">
+    <h2 class="section__heading">Community Overview</h2>
+    <p class="community__lead">
+      Located about 20 miles east of Dallas near Lake Ray Hubbard, Heath, Texas
+      is a unique, friendly, and family-oriented community in south Rockwall
+      County. No neighborhood represents the country atmosphere of Heath quite
+      like &ldquo;The Ridge&rdquo; &ndash; a community of 53 homes on large
+      estate lots.
+    </p>
+  </div>
+</section>
 
-    <section class="hero-bg bg-cover bg-center text-white py-24 md:py-32 relative">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Welcome to The Ridge-Heath HOA</h1>
-            <p class="text-lg sm:text-xl md:text-2xl mb-8">Your Community, Our Commitment</p>
-            <a href="https://www.facebook.com/groups/1041583285904997" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all-smooth hover-lift inline-block">
-                Join Our Facebook Group
-            </a>
-        </div>
-    </section>
+<section class="home-section home-section--alt">
+  <div class="container">
+    <h2 class="section__heading">Gallery</h2>
+    <div class="gallery-grid">
+      {%- for photo in site.data.gallery -%}
+      <figure class="gallery-card">
+        <img class="gallery-card__image"
+             src="{{ photo.image | relative_url }}"
+             alt="{{ photo.alt }}"
+             loading="lazy"
+             width="600" height="400">
+        <figcaption class="gallery-card__caption">{{ photo.caption }}</figcaption>
+      </figure>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <section id="overview" class="mb-16">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Community Overview</h2>
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-                <p class="text-gray-700 leading-relaxed text-lg">
-                    Located about 20 miles east of Dallas near Lake Ray Hubbard, Heath, Texas is a unique, friendly, and family-oriented community in south Rockwall County. No neighborhood represents the country atmosphere of Heath quite like “The Ridge” – a community of 53 homes on large estate lots. A signature feature of the neighborhood is the HOA-owned 45-acre Common Recreational Area (CRA) with a 4+ acre lake, dock, and ample space for gatherings, fishing, and recreation.
-                </p>
-            </div>
-        </section>
+<section class="home-section">
+  <div class="container">
+    <h2 class="section__heading">Community &amp; Amenities</h2>
+    <p class="section__intro">
+      A signature feature of The Ridge is the HOA-owned Common Recreational
+      Area &ndash; a shared natural amenity that gives the neighborhood its
+      open, country character.
+    </p>
+    <div class="amenities-grid">
+      <article class="amenity-card">
+        <svg class="amenity-card__icon" width="34" height="34" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <path d="M3 20h18M5 20V8l7-5 7 5v12"></path>
+          <path d="M9 20v-6h6v6"></path>
+        </svg>
+        <h3 class="amenity-card__title">45-Acre Common Recreational Area</h3>
+        <p class="amenity-card__text">
+          The HOA owns a 45-acre Common Recreational Area (CRA) shared by
+          residents &ndash; ample space for gatherings, fishing, and recreation.
+        </p>
+      </article>
+      <article class="amenity-card">
+        <svg class="amenity-card__icon" width="34" height="34" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <path d="M2 16c2 0 2 1.5 4 1.5S10 16 12 16s2 1.5 4 1.5S18 16 20 16"></path>
+          <path d="M2 11c2 0 2 1.5 4 1.5S10 11 12 11s2 1.5 4 1.5S18 11 20 11"></path>
+        </svg>
+        <h3 class="amenity-card__title">4+ Acre Lake &amp; Dock</h3>
+        <p class="amenity-card__text">
+          Within the CRA, a lake of more than four acres with a dock offers a
+          peaceful setting for fishing and enjoying the water.
+        </p>
+      </article>
+      <article class="amenity-card">
+        <svg class="amenity-card__icon" width="34" height="34" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <path d="M12 22s-8-4.5-8-11a8 8 0 0 1 16 0c0 6.5-8 11-8 11z"></path>
+          <path d="M9 11l2 2 4-4"></path>
+        </svg>
+        <h3 class="amenity-card__title">Estate-Lot Living</h3>
+        <p class="amenity-card__text">
+          The Ridge is a community of 53 homes on large estate lots, set in the
+          country atmosphere of Heath in south Rockwall County.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <section id="gallery">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Gallery</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift transition-all-smooth">
-                    <img src="assets/images/gallery1.jpg" alt="Entryway flowers in summer" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/94A3B8?text=Gallery+Image+1';">
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg text-gray-700">Beautiful Landscapes</h3>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift transition-all-smooth">
-                    <img src="assets/images/gallery2.jpg" alt="Neighborhood entrance or common area" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/94A3B8?text=Gallery+Image+2';">
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg text-gray-700">Community Green Space</h3>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift transition-all-smooth">
-                    <img src="assets/images/gallery3.jpg" alt="Recreational area or park" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/94A3B8?text=Gallery+Image+3';">
-                     <div class="p-4">
-                        <h3 class="font-semibold text-lg text-gray-700">Peaceful Surroundings</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-gray-300 py-10 mt-16">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; <span id="currentYear"></span> The Ridge-Heath, TX HOA. All Rights Reserved.</p>
-            <p><a href="terms.html" class="hover:text-white underline">Terms of Use</a></p>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
-
-</body>
-</html>
+{%- assign meeting = site.data.site.annual_meeting_info -%}
+{%- if meeting and meeting != "" -%}
+<section class="home-section home-section--alt">
+  <div class="container">
+    <h2 class="section__heading">Annual Meeting</h2>
+    <div class="panel panel--narrow callout">
+      <p>{{ meeting }}</p>
+      {%- if site.data.site.annual_meeting_date and site.data.site.annual_meeting_date != "" -%}
+      <p class="callout__detail">{{ site.data.site.annual_meeting_date }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}

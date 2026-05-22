@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- comment -%}
+  Homepage layout: a full photo hero over assets/images/hero.jpg with a warm
+  olive/charcoal gradient overlay. Page content follows the hero.
+{%- endcomment -%}
+<section class="hero" aria-label="Welcome">
+  <div class="hero__media"
+       style="background-image: url('{{ '/assets/images/hero.jpg' | relative_url }}');"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__content">
+    <p class="hero__eyebrow">Heath, Texas</p>
+    <h1 class="hero__title">{{ page.hero_title | default: page.title }}</h1>
+    {%- if page.hero_subtitle -%}
+    <p class="hero__subtitle">{{ page.hero_subtitle }}</p>
+    {%- endif -%}
+    {%- if page.hero_cta_url and page.hero_cta_text -%}
+    <a class="btn btn--accent hero__cta"
+       href="{{ page.hero_cta_url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      {{ page.hero_cta_text }}
+    </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{{ content }}

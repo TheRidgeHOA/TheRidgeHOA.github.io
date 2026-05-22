@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------
+# Homepage photo gallery.
+#
+# Each entry:
+#   image   - path to the image, relative to the site root
+#   alt     - accessible description of the photo (for screen readers)
+#   caption - short caption shown beneath the photo
+#
+# These three images already exist in assets/images/. To change the gallery,
+# add or replace images there and update the entries below.
+# ---------------------------------------------------------------------------
+
+- image: "/assets/images/gallery1.jpg"
+  alt: "Entryway flowers in summer at The Ridge"
+  caption: "Beautiful Landscapes"
+
+- image: "/assets/images/gallery2.jpg"
+  alt: "Neighborhood entrance and common green space"
+  caption: "Community Green Space"
+
+- image: "/assets/images/gallery3.jpg"
+  alt: "The recreational area at The Ridge"
+  caption: "Peaceful Surroundings"

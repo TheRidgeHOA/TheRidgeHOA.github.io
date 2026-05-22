@@ -1,0 +1,16 @@
+# Jekyll build output - GitHub Pages builds the site server-side,
+# so the local _site directory should never be committed.
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler / local gem install
+vendor/
+.bundle/
+Gemfile.lock
+
+# Document-reconstruction staging (~190 MB of OCR page renders, build
+# scripts, and proofing reports). The finished reading-copy PDFs are
+# committed under assets/documents/; this working folder stays local only.
+_reconstruction/

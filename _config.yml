@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------------------
+# The Ridge-Heath HOA - Jekyll site configuration
+# ---------------------------------------------------------------------------
+# This site is hosted on GitHub Pages with the custom domain in CNAME.
+# GitHub Pages builds Jekyll server-side, so no GitHub Actions workflow and
+# no committed build output (_site) are required.
+# ---------------------------------------------------------------------------
+
+title: "The Ridge-Heath HOA"
+description: >-
+  The official website of The Ridge-Heath Homeowners Association in Heath,
+  Texas - community information, governing documents, officers, and local
+  resources for residents of The Ridge.
+
+# Custom domain is theridgeheath.com (see the CNAME file in the repo root).
+# Because the site is served from the domain root, baseurl is empty.
+url: "https://theridgeheath.com"
+baseurl: ""
+
+# Default social-share / Open Graph image (lives in assets/images/).
+og_image: "/assets/images/hero.jpg"
+
+lang: "en"
+
+# Build settings
+markdown: kramdown
+encoding: utf-8
+
+# Files and folders that should never be copied into the built site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Per-path front-matter defaults so individual pages stay tidy.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"

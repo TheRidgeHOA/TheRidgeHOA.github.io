@@ -1,0 +1,54 @@
+# ===========================================================================
+# DORMANT CONTENT - information the HOA does not have published yet.
+# ===========================================================================
+#
+# HOW THIS FILE WORKS
+# -------------------
+# Every value below is intentionally left blank (empty quotes "").
+# The page templates wrap each of these sections in an {% if %} guard, e.g.:
+#
+#     {% if site.data.site.contact_email != "" %} ...section... {% endif %}
+#
+# So while a value is blank, NOTHING is rendered - no heading, no empty box,
+# no "TBD" placeholder. The live site always looks finished and complete.
+#
+# The MOMENT you fill in a value here and the site rebuilds, the matching
+# section appears automatically. Nothing else needs to change.
+#
+# HOW TO TURN ON A SECTION
+# ------------------------
+# 1. Replace the empty "" with the real text, between the quotes.
+# 2. Save the file and commit. GitHub Pages rebuilds the site.
+# 3. The section now shows on the relevant page.
+#
+# Keep the keys exactly as named - the templates look them up by name.
+# ===========================================================================
+
+
+# --- Contact email ---------------------------------------------------------
+# A general HOA contact email address. When set, it appears as a contact
+# section in the site footer and on the Terms page "Contact Us" area.
+# Example:  contact_email: "board@theridgeheath.com"
+contact_email: ""
+
+
+# --- Annual meeting ---------------------------------------------------------
+# Details about the annual fall meeting. When `annual_meeting_info` is set,
+# an "Annual Meeting" section appears on the homepage.
+# `annual_meeting_date` is optional extra text shown alongside it.
+# Example:
+#   annual_meeting_info: "The annual meeting is held each fall at the CRA."
+#   annual_meeting_date: "Saturday, October 18, 2025, 10:00 AM"
+annual_meeting_info: ""
+annual_meeting_date: ""
+
+
+# --- Dues / assessments -----------------------------------------------------
+# Information about HOA dues or annual assessments. When `dues_info` is set,
+# a "Dues & Assessments" section appears on the HOA Docs page.
+# `dues_amount` is optional extra text shown alongside it.
+# Example:
+#   dues_info: "Annual dues are billed each January and are due by March 1."
+#   dues_amount: "$450 per year"
+dues_info: ""
+dues_amount: ""

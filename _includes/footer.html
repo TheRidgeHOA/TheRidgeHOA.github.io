@@ -1,0 +1,23 @@
+{%- comment -%}
+  Site footer. The copyright year is rendered server-side by Jekyll at build
+  time, so no JavaScript is needed. The optional contact email only appears
+  when _data/site.yml provides one.
+{%- endcomment -%}
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__brand">The Ridge-Heath HOA</p>
+
+    {%- if site.data.site.contact_email and site.data.site.contact_email != "" -%}
+    <p class="site-footer__contact">
+      <a href="mailto:{{ site.data.site.contact_email }}">{{ site.data.site.contact_email }}</a>
+    </p>
+    {%- endif -%}
+
+    <p class="site-footer__legal">
+      &copy; {{ 'now' | date: "%Y" }} The Ridge-Heath, TX HOA. All Rights Reserved.
+    </p>
+    <p class="site-footer__links">
+      <a href="{{ '/terms.html' | relative_url }}">Terms of Use</a>
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------------------
+# Official HOA documents (PDFs), organized into two groups.
+#
+# Each group has:
+#   name        - the section heading shown on the HOA Docs page
+#   description - a short blurb shown under the heading
+#   documents   - a list of document entries
+#
+# Each document entry has:
+#   title        - a clear, honest display name
+#   reading_copy - path to the clean, searchable re-typeset PDF
+#   original     - path to the original recorded scanned PDF
+#   summary      - a one-line description of what the document is
+#
+# All paths are relative to the site root. The HOA Docs page passes them
+# through Jekyll's `relative_url` filter so links keep working regardless
+# of where the site is hosted.
+#
+# The "reading copy" is a clean, re-typeset version generated from the
+# scanned original purely for readability and searchability. The original
+# recorded scan remains the authoritative document.
+# ---------------------------------------------------------------------------
+
+- name: "Governing Documents"
+  description: >-
+    The core recorded documents and forms that residents actually need:
+    the Declaration of Covenants, the Bylaws, the covenant enforcement
+    policy, and the architectural review application.
+  documents:
+    - title: "Declaration of Covenants, Conditions & Restrictions (2001)"
+      reading_copy: "/assets/documents/restrictions-covenants-reading-copy.pdf"
+      original: "/assets/documents/restrictions-covenants.pdf"
+      summary: >-
+        The core recorded governing document for The Ridge-Heath, setting
+        out the covenants, assessments, architectural review, and use
+        restrictions that run with every lot.
+
+    - title: "Bylaws of the Association"
+      reading_copy: "/assets/documents/by-laws-reading-copy.pdf"
+      original: "/assets/documents/by-laws.pdf"
+      summary: >-
+        The Initial Bylaws of the Association, governing how the HOA is
+        organized and operated, including meetings, the Board of Directors,
+        and officers.
+
+    - title: "Covenant Enforcement & Fining Policy (2004)"
+      reading_copy: "/assets/documents/by-law-amendments-reading-copy.pdf"
+      original: "/assets/documents/by-law-amendments.pdf"
+      summary: >-
+        The Board's adopted policy for enforcing covenant violations,
+        including the notice, hearing, and fine schedule. Also contains the
+        2004 owner ballot for a proposed periodic-mowing covenant (proposed
+        Section 9.36).
+
+    - title: "Architectural Review (Modifications Committee) Application"
+      reading_copy: "/assets/documents/arc-project-application-reading-copy.pdf"
+      original: "/assets/documents/arc-project-application.pdf"
+      summary: >-
+        The blank form residents submit to request approval of exterior
+        changes or improvements to their property.
+
+- name: "Corporate Records"
+  description: >-
+    Secondary, corporate-binder material that is largely administrative.
+    These sections are provided for completeness and recordkeeping
+    reference rather than day-to-day resident use.
+  documents:
+    - title: "Corporate Records — Section One: Articles & Bylaws"
+      reading_copy: "/assets/documents/by-laws-section-I-reading-copy.pdf"
+      original: "/assets/documents/by-laws-section-I.pdf"
+      summary: >-
+        Section One of the corporate binder, collecting the Articles of
+        Incorporation and Bylaws material.
+
+    - title: "Corporate Records — Section Two: Directors' Meetings"
+      reading_copy: "/assets/documents/by-laws-section-II-reading-copy.pdf"
+      original: "/assets/documents/by-laws-section-II.pdf"
+      summary: >-
+        Section Two of the corporate binder, covering Directors' meetings;
+        consists largely of blank meeting-form templates.
+
+    - title: "Corporate Records — Sections Three to Five: Members' Meetings, Tax Materials & Membership Roster"
+      reading_copy: "/assets/documents/by-laws-section-III-V-reading-copy.pdf"
+      original: "/assets/documents/by-laws-section-III-V.pdf"
+      summary: >-
+        Sections Three through Five of the corporate binder, covering
+        members' meetings, tax materials, and the membership roster;
+        consists largely of blank form templates.

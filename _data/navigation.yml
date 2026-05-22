@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------------------
+# Primary site navigation.
+#
+# The `url` values MUST keep their .html extensions: the live site already
+# serves these exact URLs (/index.html, /officers.html, etc.) and changing
+# them would break inbound links and bookmarks.
+#
+# `header.html` loops over this list and marks the active item by comparing
+# each `url` against the current `page.url`.
+# ---------------------------------------------------------------------------
+
+- title: "Home"
+  url: "/index.html"
+
+- title: "Officers"
+  url: "/officers.html"
+
+- title: "HOA Docs"
+  url: "/hoa-docs-and-information.html"
+
+- title: "Fees & Dues"
+  url: "/fees.html"
+
+- title: "Local Info"
+  url: "/local-info-links.html"
+
+- title: "Terms"
+  url: "/terms.html"

@@ -1,0 +1,46 @@
+{%- comment -%}
+  Document card with two links: a primary link to the clean, searchable
+  "reading copy" PDF and a smaller secondary link to the original recorded
+  scan. Both open in a new tab.
+
+  Usage:
+    {% include doc-card.html
+         title="..."
+         summary="..."
+         reading_copy="/assets/documents/x-reading-copy.pdf"
+         original="/assets/documents/x.pdf" %}
+{%- endcomment -%}
+<article class="doc-card">
+  <h3 class="doc-card__title">{{ include.title }}</h3>
+  <p class="doc-card__summary">{{ include.summary }}</p>
+  <div class="doc-card__links">
+    <a class="doc-card__link doc-card__link--primary"
+       href="{{ include.reading_copy | relative_url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      <svg class="doc-card__icon" width="20" height="20" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true" focusable="false">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="9" y1="13" x2="15" y2="13"></line>
+        <line x1="9" y1="17" x2="15" y2="17"></line>
+      </svg>
+      <span>Reading copy (searchable)</span>
+    </a>
+    <a class="doc-card__link doc-card__link--secondary"
+       href="{{ include.original | relative_url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      <svg class="doc-card__icon" width="16" height="16" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true" focusable="false">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+      </svg>
+      <span>Original scan</span>
+    </a>
+  </div>
+</article>

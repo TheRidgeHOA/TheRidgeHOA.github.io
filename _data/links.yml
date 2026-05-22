@@ -1,0 +1,82 @@
+# ---------------------------------------------------------------------------
+# Local information links, grouped by category.
+#
+# Each group:
+#   category - the section heading
+#   links    - a list of { name, url } external links
+#
+# The Local Info page renders every group and every link. All links open in
+# a new tab with rel="noopener noreferrer". To add a resource, place it under
+# the appropriate category (or add a new category group).
+# ---------------------------------------------------------------------------
+
+- category: "State & Local Government Resources"
+  links:
+    - name: "City of Heath, TX"
+      url: "https://www.heathtx.com/"
+    - name: "Rockwall County Texas"
+      url: "https://www.rockwallcountytexas.com/"
+    - name: "Rockwall Area Chamber of Commerce"
+      url: "https://www.rockwallchamber.org/"
+    - name: "Texas.gov"
+      url: "http://www.texas.gov/"
+    - name: "Texas Department of Transportation"
+      url: "http://www.txdot.gov/"
+    - name: "FEMA"
+      url: "http://www.fema.gov/"
+
+- category: "Utilities"
+  links:
+    - name: "City of Heath (Water & Trash/Recycling)"
+      url: "https://www.heathtx.com/utility-services/"
+    - name: "Atmos Energy (Gas)"
+      url: "http://www.atmosenergy.com/"
+    - name: "Power to Choose (Official TX site)"
+      url: "https://www.powertochoose.org/"
+    - name: "Peoples Telecom (Fiber Internet)"
+      url: "http://www.peoplestelecom.net/"
+
+- category: "Activities & Sports"
+  links:
+    - name: "J.E.R. Chilton YMCA at Rockwall"
+      url: "https://ymcadallas.org/locations/jer-chilton-ymca-rockwall"
+    - name: "Rockwall Indoor Sports Expo (R.I.S.E.)"
+      url: "http://www.riserockwall.com/"
+    - name: "Anytime Fitness (Heath, TX)"
+      url: "https://www.anytimefitness.com/gyms/4092/heath-tx-75032/"
+    - name: "Chandler's Landing Tennis"
+      url: "http://www.chandlerstennis.com/"
+    - name: "Oasis Tennis"
+      url: "http://www.oasistennis.com/"
+    - name: "Buffalo Creek Golf Club"
+      url: "https://www.kempersports.com/properties/buffalo-creek-golf-club/"
+    - name: "Texas Gun Ranch"
+      url: "http://www.texasgunranch.com/"
+
+- category: "Grocery & Pharmacy"
+  links:
+    - name: "Tom Thumb (Grocery)"
+      url: "http://local.tomthumb.com/"
+    - name: "CVS (Pharmacy)"
+      url: "http://www.cvs.com/"
+
+- category: "Heath Restaurants"
+  links:
+    - name: "Pablo's (Tex-Mex)"
+      url: "http://www.pablostx.com/"
+    - name: "Manny's (Tex-Mex)"
+      url: "http://www.mannysuptowntexmex.com/"
+    - name: "Gianni's (Pizza/Italian)"
+      url: "http://www.giannisheathtx.com/"
+    - name: "Milano's (Pizza/Italian)"
+      url: "http://www.milanospizzainheath.com/"
+    - name: "Marco's (Pizza)"
+      url: "https://www.facebook.com/MarcoSHeath"
+    - name: "Standard Service"
+      url: "http://www.thestandardservice.com/"
+    - name: "Anchor Seafood & Bar"
+      url: "http://www.theanchorseafoodandbar.com/"
+    - name: "Donut Supreme"
+      url: "https://www.facebook.com/DonutSupreme"
+    - name: "Hawk Donuts"
+      url: "https://hawk-donuts.business.site/"

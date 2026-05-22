@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{%- comment -%}
+  Interior page layout: a slim solid olive banner showing the page title and
+  an optional subtitle from front matter. Content starts right below it.
+{%- endcomment -%}
+<section class="page-banner" aria-label="{{ page.title }}">
+  <div class="container">
+    <h1 class="page-banner__title">{{ page.title }}</h1>
+    {%- if page.subtitle -%}
+    <p class="page-banner__subtitle">{{ page.subtitle }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+<div class="page-body">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>

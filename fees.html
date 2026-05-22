@@ -1,0 +1,172 @@
+---
+layout: page
+title: "Fees & Dues"
+subtitle: "Annual dues, administrative fees, and where to find them in the governing documents"
+description: >-
+  Annual dues, the administrative fee on delinquent accounts, and the
+  ownership transfer fee for The Ridge-Heath HOA in Heath, Texas, with links
+  to the relevant articles of the recorded Declaration of Covenants.
+---
+
+{%- assign fees = site.data.fees -%}
+
+<section class="section">
+  <h2 class="section__heading">Annual Dues &amp; Fees</h2>
+  <p class="section__intro">
+    The figures below summarize the assessments and fees that apply to lots in
+    The Ridge-Heath. They are drawn from the Association's recorded governing
+    documents.
+  </p>
+
+  <ul class="fee-list">
+    <li class="fee-card">
+      <h3 class="fee-card__title">Annual Dues</h3>
+      <p class="fee-card__amount">
+        {{ fees.annual_dues_amount }}
+        <span class="fee-card__per">per {{ fees.annual_dues_per }}</span>
+      </p>
+      <p class="fee-card__text">
+        Annual dues are due {{ fees.dues_due_date }}. An account is considered
+        delinquent if dues are not paid by {{ fees.dues_delinquent_date }}.
+      </p>
+    </li>
+
+    <li class="fee-card">
+      <h3 class="fee-card__title">Administrative Fee on Delinquent Accounts</h3>
+      <p class="fee-card__amount">
+        {{ fees.admin_fee_amount }}
+        <span class="fee-card__per">per {{ fees.admin_fee_per }}</span>
+      </p>
+      <p class="fee-card__text">
+        A {{ fees.admin_fee_amount }} administrative fee is applied on the
+        first of each month an account remains delinquent. This fee reflects
+        the administrative costs the Association incurs in attempting to
+        collect past-due amounts.
+      </p>
+    </li>
+
+    <li class="fee-card">
+      <h3 class="fee-card__title">Ownership Transfer Fee</h3>
+      <p class="fee-card__amount">{{ fees.transfer_fee_amount }}</p>
+      <p class="fee-card__text">
+        A one-time fee charged when ownership of a lot is transferred.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section__heading">Non-Payment, Liens &amp; Covenant Enforcement</h2>
+  <p class="section__intro">
+    Two separate documents apply here: one covers liens and remedies for
+    <strong>unpaid dues and assessments</strong>, while the other covers
+    <strong>fines for covenant violations</strong>. Each card below opens the
+    relevant document in a new tab.
+  </p>
+
+  <ul class="fee-doc-list">
+    {%- comment -%}
+      These links target the reconstructed, machine-readable "reading
+      copy" PDFs (restrictions-covenants-reading-copy.pdf and
+      by-law-amendments-reading-copy.pdf) using #page= numbers. Browser PDF
+      viewers honour #page= reliably; named destinations did not navigate
+      consistently. Page numbers below match the CURRENT reading-copy PDFs -
+      if a reading copy is regenerated and its pagination shifts, re-check
+      these: covenant Article V = p.17, covenant Section 5.8 = p.21,
+      Fining Policy (Part Two) = p.6. The original recorded scans remain
+      authoritative.
+    {%- endcomment -%}
+    <li>
+      <a class="fee-doc-card"
+         href="{{ '/assets/documents/restrictions-covenants-reading-copy.pdf' | relative_url }}#page=17"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg class="fee-doc-card__icon" width="26" height="26"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="9" y1="13" x2="15" y2="13"></line>
+          <line x1="9" y1="17" x2="15" y2="17"></line>
+        </svg>
+        <span class="fee-doc-card__body">
+          <span class="fee-doc-card__title">Fees &amp; Dues in the Covenant</span>
+          <span class="fee-doc-card__text">
+            Opens the Declaration of Covenants at
+            <strong>Article V &mdash; Covenants for Assessments</strong>,
+            which establishes the annual dues and related fees.
+          </span>
+        </span>
+        <span class="fee-doc-card__meta" aria-hidden="true">PDF</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="fee-doc-card"
+         href="{{ '/assets/documents/restrictions-covenants-reading-copy.pdf' | relative_url }}#page=21"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg class="fee-doc-card__icon" width="26" height="26"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="9" y1="13" x2="15" y2="13"></line>
+          <line x1="9" y1="17" x2="15" y2="17"></line>
+        </svg>
+        <span class="fee-doc-card__body">
+          <span class="fee-doc-card__title">Non-Payment, Liens &amp; Remedies</span>
+          <span class="fee-doc-card__text">
+            Opens the Declaration of Covenants at
+            <strong>Section 5.8 &mdash; Effect of Non-Payment of Assessment;
+            the Lien; and Remedies of the Association</strong>, which covers
+            what happens when an account becomes delinquent.
+          </span>
+        </span>
+        <span class="fee-doc-card__meta" aria-hidden="true">PDF</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="fee-doc-card"
+         href="{{ '/assets/documents/by-law-amendments-reading-copy.pdf' | relative_url }}#page=6"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg class="fee-doc-card__icon" width="26" height="26"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="9" y1="13" x2="15" y2="13"></line>
+          <line x1="9" y1="17" x2="15" y2="17"></line>
+        </svg>
+        <span class="fee-doc-card__body">
+          <span class="fee-doc-card__title">Covenant Enforcement &amp; Fining Policy</span>
+          <span class="fee-doc-card__text">
+            Opens the Board's
+            <strong>Covenant Enforcement &amp; Fining Policy</strong>
+            (adopted July 2004), which sets out the violation, notice, and
+            hearing process and the $50&ndash;$500 fine schedule for
+            <strong>covenant violations</strong> &mdash; a separate matter from
+            unpaid dues.
+          </span>
+        </span>
+        <span class="fee-doc-card__meta" aria-hidden="true">PDF</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <div class="panel panel--narrow callout">
+    <p>
+      Amounts and dates on this page are provided for convenience. The
+      Association's recorded governing documents control in the event of any
+      discrepancy. For questions about your account, dues, or transfer
+      certificates, contact the HOA Secretary or Treasurer.
+    </p>
+  </div>
+</section>

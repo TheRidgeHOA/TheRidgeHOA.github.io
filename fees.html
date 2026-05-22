@@ -32,16 +32,20 @@ description: >-
     </li>
 
     <li class="fee-card">
-      <h3 class="fee-card__title">Administrative Fee on Delinquent Accounts</h3>
+      <h3 class="fee-card__title">Administrative Fees on Delinquent Dues</h3>
       <p class="fee-card__amount">
-        {{ fees.admin_fee_amount }}
-        <span class="fee-card__per">per {{ fees.admin_fee_per }}</span>
+        {{ fees.admin_fee_initial }}
+        <span class="fee-card__per">then {{ fees.admin_fee_monthly }} per month</span>
       </p>
       <p class="fee-card__text">
-        A {{ fees.admin_fee_amount }} administrative fee is applied on the
-        first of each month an account remains delinquent. This fee reflects
-        the administrative costs the Association incurs in attempting to
-        collect past-due amounts.
+        If annual dues are not paid by {{ fees.dues_delinquent_date }}, a
+        one-time {{ fees.admin_fee_initial }} per-lot administrative fee is
+        applied when the account becomes delinquent, followed by
+        {{ fees.admin_fee_monthly }} for each additional month it remains
+        delinquent. These are administrative fees &mdash; they reimburse the
+        Association for the cost of contacting the member, tracking the
+        delinquency, and related collection effort &mdash; not punitive
+        penalties.
       </p>
     </li>
 

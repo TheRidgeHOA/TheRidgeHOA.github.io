@@ -23,14 +23,15 @@ annual_dues_per:      "lot, per year"
 dues_due_date:        "January 1, 2026"
 dues_delinquent_date: "February 1, 2026"
 
-# --- Administrative fee on delinquent accounts -----------------------------
-# A fee that reimburses the Association for the costs it incurs in attempting
-# to collect a delinquent account. It is NOT a punitive penalty. It accrues
-# on the first day of each month an account remains delinquent.
-#   admin_fee_amount - the dollar figure (include the "$")
-#   admin_fee_per    - the period over which the fee recurs
-admin_fee_amount: "$10.00"
-admin_fee_per:    "month"
+# --- Administrative fees on delinquent dues accounts -----------------------
+# Administrative fees that reimburse the Association for the cost of
+# contacting the member, tracking the delinquency, and related collection
+# effort on a past-due ANNUAL DUES account. They are NOT punitive penalties.
+# Applies to membership dues only (covenant-violation fines are separate).
+#   admin_fee_initial - one-time fee charged when the account first goes late
+#   admin_fee_monthly - recurring fee for each further month it stays delinquent
+admin_fee_initial: "$50.00"
+admin_fee_monthly: "$10.00"
 
 # --- Ownership transfer fee ------------------------------------------------
 # A one-time fee charged when ownership of a lot is transferred.

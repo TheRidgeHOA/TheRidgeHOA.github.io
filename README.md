@@ -159,8 +159,8 @@ rebuilds automatically.
 | `annual_dues_per` | Unit label after the figure (e.g. `"lot, per year"`) |
 | `dues_due_date` | Date dues are due |
 | `dues_delinquent_date` | Date an unpaid account becomes delinquent |
-| `admin_fee_amount` | Monthly administrative fee on delinquent accounts |
-| `admin_fee_per` | Recurrence label (currently `"month"`) |
+| `admin_fee_initial` | One-time administrative fee when dues first go delinquent |
+| `admin_fee_monthly` | Recurring administrative fee for each further month delinquent |
 | `transfer_fee_amount` | One-time ownership transfer fee |
 
 Example — to update annual dues for a new year:

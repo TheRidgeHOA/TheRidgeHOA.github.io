@@ -46,9 +46,9 @@
   }
 
   /* --- 2. Email obfuscation: click to reveal ----------------------------- */
-  /* The address is split into data-user / data-domain attributes and is only
-   * assembled into a mailto link when the visitor clicks the button. This
-   * keeps plain-text addresses out of the page source for spam scrapers. */
+  /* Click-to-reveal pattern: lightly discourages naive regex scrapers, but
+   * the data-user/data-domain split is trivially recombined by any modern
+   * harvester. Real privacy requires a contact form or a role-based address. */
   function initEmailReveal() {
     var buttons = document.querySelectorAll('[data-email-reveal]');
 

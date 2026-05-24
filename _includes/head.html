@@ -24,6 +24,11 @@
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_description }}">
 
+  {%- comment -%} Canonical URL so search engines treat each page's
+       absolute URL as the source of truth (avoids duplicate-content
+       weirdness if the site is ever reached via another hostname). {%- endcomment -%}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
   {%- comment -%} Open Graph / social sharing {%- endcomment -%}
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:description" content="{{ page_description }}">

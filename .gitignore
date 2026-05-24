@@ -14,3 +14,7 @@ Gemfile.lock
 # scripts, and proofing reports). The finished reading-copy PDFs are
 # committed under assets/documents/; this working folder stays local only.
 _reconstruction/
+
+# Review-agent scratch and stray screenshots
+_review_tmp/
+Screenshot*.png

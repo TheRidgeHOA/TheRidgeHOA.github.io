@@ -26,6 +26,12 @@ lang: "en"
 markdown: kramdown
 encoding: utf-8
 
+# Plugins (GitHub Pages whitelists these natively).
+# jekyll-sitemap auto-generates /sitemap.xml at build time so search engines
+# can discover every page without us maintaining the list by hand.
+plugins:
+  - jekyll-sitemap
+
 # Files and folders that should never be copied into the built site.
 exclude:
   - Gemfile

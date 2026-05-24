@@ -8,10 +8,12 @@
 #   email_domain - OPTIONAL: the part of an email address after the "@"
 #
 # When BOTH email_user and email_domain are present, the officers page
-# renders a "click to reveal email" button. The address is never written
-# into the page HTML as plain text; JavaScript assembles the mailto link
-# only when the visitor clicks. This keeps addresses away from spam
-# scrapers. To add an email for an officer, just fill in both fields.
+# renders a "click to reveal email" button. The address is split across
+# data-user/data-domain attributes and JavaScript assembles the mailto link
+# only when the visitor clicks. This lightly discourages naive regex
+# scrapers, but the split is trivially recombined by any modern harvester -
+# real privacy would require a contact form or a role-based address.
+# To add an email for an officer, just fill in both fields.
 # ---------------------------------------------------------------------------
 
 - name: "Bill Wallace"

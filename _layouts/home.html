@@ -23,6 +23,12 @@ layout: default
       {{ page.hero_cta_text }}
     </a>
     {%- endif -%}
+    {%- if page.hero_cta_secondary_url and page.hero_cta_secondary_text -%}
+    <a class="btn btn--outline hero__cta-secondary"
+       href="{{ page.hero_cta_secondary_url | relative_url }}">
+      {{ page.hero_cta_secondary_text }}
+    </a>
+    {%- endif -%}
   </div>
 </section>
 

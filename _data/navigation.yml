@@ -12,6 +12,9 @@
 - title: "Home"
   url: "/index.html"
 
+- title: "New Residents"
+  url: "/new-residents.html"
+
 - title: "Officers"
   url: "/officers.html"
 
